@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_classico.css">
+    <title>Comunicados</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+</head>
+<body>
+    <div id="bg-img"></div>
+    <div class="content">
+        
+<!--             Start                  -->
+        <div id="start">
+            <div id="iniciar">INICIAR QUIZ</div>
+            <a href="index.html">
+                <div id="voltar">VOLTAR</div>
+            </a> 
+        </div>
+        
+        <!-- Fim da div start -->
+    
+<!--            Regras                  -->
+        <div id="regras">
+            <h2>Modo Clássico - Regras</h2>
+            <h4>1.  Neste modo você deve apenas se concentrar nas questões;</h4>
+            <h4>2.  Não existe tempo para responder;</h4>
+            <h4>3.  Cada resposta correta rende 10 pontos;</h4>
+            <h4>4.  Ao final você pode colocar seu nome ou apelido no ranking.</h4> 
+            <div class="btn">
+                <button id="sair">Sair</button>
+                <button id="ctn">Continuar</button>
+            </div>       
+        </div>        
+<!--        Fim da div regras            -->
+
+
+<!--        Card de questões             -->
+<div id="card">
+    <!--       CABEÇALHO DO CARD       -->
+        <div class="top-card">
+            <h4>Comunicados</h4>
+        </div>
+    
+    <!--            QUESTÕES           -->
+        <div class="qst-card">
+            <h2 id="questnum"></h2>
+            <h2 id="questtxt"></h2>
+        </div>
+    
+    <!--           ALTERNATIVAS        -->
+        <div id="alt-list">
+            <h4 class="alt_qst" id="opc1"></h4>
+            <h4 class="alt_qst" id="opc2"></h4>
+            <h4 class="alt_qst" id="opc3"></h4>
+            <h4 class="alt_qst" id="opc4"></h4>
+        </div>
+    
+    <!--         RODAPÉ DO CARD        -->
+        <div class="footer-card">
+            <h3 id="total"></h3>
+            <h3 id="prox">PRÓXIMA</h3>
+        </div>
+
+    </div>
+<!--        Fim da div card             -->
+
+<!--                Resultado                 -->
+        <div id="resultado">
+            <h1>Fim de jogo</h1>
+            <h2>Pontuação</h2>
+            <h2 id="score"></h2>
+            <h3 id="salvo">Usuário salvo - Confira no Menu>Highscores</h3>
+            <form>                
+                <input id="username" type="text" placeholder="Insira seu nome">
+                <button id="sbmt" type="submit" onclick= "savescore(event)" disabled>SALVAR</button>
+            </form>
+            <div id="fim">
+                <a href="index.html">
+                    <div id="fim_menu">MENU</div>
+                </a>
+            </div>
+        </div>
+<!--            Fim da div Resultado           -->
+        
+    </div> 
+<!--        Fim da div content          -->
+    <script src='js/script_classico.js'></script>
+    <script src="js/questoes_classico.js"></script>
+</body>
+</html>

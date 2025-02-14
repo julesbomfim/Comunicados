@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Comunicados</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+</head>
+<body>
+    <div id="bg-img"></div>
+    <!-- <audio src="audio/jigsaw-puzzle.mp3" controls loop></audio> -->
+    <div id="content">
+        <!----------------- MENU ---------------------->
+        <div id="card_home">
+            <div id="imagem">
+                <img src="img/logo.jpg" alt="Logo-Ambientados" width="100%" height="50%">
+                <!-- <img src="img/pev-logo.png" alt="Logo-PEV" width="80%"> -->
+            </div>
+            <div id="interface">
+                <h1>Bem-Vindo(a)!</h1>
+                <div id="btns">
+                    <button id="jogar">JOGAR</button>
+                    <button id="highscores" onclick="buscarConteudo()">HIGHSCORES</button>
+                    <button id="regras">REGRAS</button>
+                    <button id="sobre">SOBRE</button>
+                </div>
+                <h5></h5>
+            </div>
+        </div>
+        <!----------------- MENU ---------------------->
+
+        <!----------------- JOGAR --------------------->
+        <div id="card_jogar">
+            <div id="modos">
+                <a href="classico.html">
+                    <div id="md_class">
+                        <div class="mid">
+                            <h2>Modo Clássico</h2>
+                            <h4>
+                                Faça a maior pontuação sem se preocupar com tempo
+                            </h4>
+                        </div>
+                        <div class="bottom">
+                            <h2>JOGAR</h2>                        
+                        </div>
+                    </div>
+                </a>
+
+                <a href="contra_tempo.html">
+                    <div id="md_tempo">
+                        <div class="mid">
+                            <h2>Modo Contra o Tempo</h2>
+                            <h4>
+                                Você consegue responder rápido?
+                            </h4>
+                        </div>
+                        <div class="bottom">
+                            <h2>JOGAR</h2>    
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div id="btn3">
+                <button id="princip">MENU</button>
+            </div>
+        </div>
+        <!----------------- JOGAR --------------------->
+
+        <!----------------- SCORES --------------------->
+        <div id="card_scores">
+            <div id="elmts">
+                <h2>HIGHSCORES</h2>
+                <div id="tabela">
+                    <table>
+                        <th>NOME</th>
+                        <th>PONTOS</th>
+                        <th>CLASSIFICAÇÃO</th>
+                        <tbody id="corpoTabela">
+                    
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+            <div id="btn5">
+                <button id="schome">MENU</button>
+            </div>
+
+        </div>
+        <!----------------- SCORES --------------------->
+
+        <!---------------- REGRAS --------------------->
+        <div id="card_regras">
+            <div id="corpo">
+                <div id="classico">
+                    <h2>Modo Clássico</h2>
+                    <h4>1. Não existe período de tempo para responder a questão.</h4>
+                    <h4>2. Só há uma alternativa correta.</h4>
+                    <h4>3. Cada acerto gera uma pontuação de 10.</h4>
+                    <h4>4. Ao final salve seu resultado.</h4>
+                </div>
+                <hr>
+                <div id="tempo">
+                    <h2>Modo Contra o Tempo</h2>
+                    <h4>1. Responda corretamente dentro do tempo de 20seg.</h4>
+                    <h4>2. Só há uma alternativa correta.</h4>
+                    <h4>3. Ao marcar uma alternativa incorreta, o jogo é encerrado.</h4>
+                    <h4>4. Se o crônometro atingir 20seg, o jogo é encerrado.</h4>
+                </div>
+            </div>
+            <div id="btn">
+                <button id="home">MENU</button>
+            </div>
+        </div>
+        <!---------------- REGRAS --------------------->
+
+     <!----------------- SOBRE --------------------->
+        <div id="card_sobre">
+            <div id="info">
+                <h2>Sobre</h2>
+                <p>
+                Comunicados é um jogo quiz desenvolvido dentro da disciplina Comunicação em Saúde , com intuito de proporcionar 
+                o conhecimento para os discentes engajados na área da saúde. Sabe-se que a comunicação em saúde é uma peça fundamental 
+                para criar uma relação entre profissionais e pacientes, especialmente em questões relacionadas com a aprendizagem, com 
+                os processos de trabalho em promoção da saúde, e prevenção da doença realizada na atenção primária à saúde.
+                </p>
+<!--                 <h2>Créditos</h2>
+                <h4>Todas as questões do nosso banco foram criadas a partir das postagens feitas no instagram do PEV.</h4>
+                <h4>Background: Designed by pikisuperstar /Freepik </h4>
+                <h5>escolaverde.org</h5> -->
+            </div>
+            <div id="btn2">
+                <button id="btorg">ORGANIZAÇÃO</button>
+                <button id="menu">MENU</button>
+            </div>
+        </div>
+        <!----------------- SOBRE --------------------->
+        <!----------------- ORGANIZAÇÃO --------------------->
+        <div id="card_org">
+            <div id="org2">
+                <div id="devs">
+                    <h2>Organização</h2>
+                    <h4>José Luis Amorim - Graduando em Psicologia</h4>
+                    <h4>Jules Bomfim Mangueira - Graduando em Engenharia da Computação</h4>
+                    <h4>Júlia Arruda Santos - Graduando em Medicina</h4>
+                    <h4>Júlia Caroline da Silva Rocha - Graduando em Medicina</h4>
+                    <h4>Karla Ribeiro Lima - Graduando em Medicina</h4>
+                    <h4>Lara Ribeiro de Pádua - Graduando em Medicina</h4>
+                    <h4>Laura Gomes Pereira - Graduando em Medicina</h4>
+                    <br>
+                    <h4>Fernanda Patrícia Soares Souto Novaes - Orientadora</h4>                    
+                </div>
+                <div id="copy">
+                    <h5>Copyright © Comunicação em Saúde - Universidade Federal do Vale do São Francisco</h5>
+                    <h5></h5>
+                </div>
+            </div>
+            <div id="btn-org">
+                <button id="voltar-sobre">VOLTAR</button>
+            </div>
+        </div>
+        <!----------------- ORGANIZAÇÃO --------------------->
+
+    </div>
+<!---------------- CONTENT --------------------->
+<script src="js/script.js"></script>
+</body>
+</html>
